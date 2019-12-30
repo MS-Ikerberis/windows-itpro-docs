@@ -98,6 +98,6 @@ When performing a user-driven deployment using Windows Autopilot, the following 
 - After joining Azure Active Directory, the device will enroll in Intune (or other configured MDM services).
 - If configured, the [enrollment status page](enrollment-status.md) will be displayed.
 - Once the device configuration tasks have completed, the user will be signed into Windows 10 using the credentials they previously provided.
-- Once signed in, the enrollment status page will again be displayed for user-targeted configuration tasks.
+- Once signed in, the enrollment status page will again be displayed for user-targeted configuration tasks ( the user might get a prompt to sign in again. This is due to the lag of Azure AD connect to register the device with Azure as such the Azure PRT is yet to flow to the device to facilitate SSO).
 
 If your results do not match these expectations, see the [Windows Autopilot Troubleshooting](troubleshooting.md) documentation.
